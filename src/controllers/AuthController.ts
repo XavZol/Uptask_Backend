@@ -191,8 +191,8 @@ export class AuthController {
 
     static updatedPasswordWithToken = async (req: Request, res: Response) => {
         try {
-            const {token} = req.params
-            const {password} = req.body
+        const {token} = req.params // ¡OJO AQUÍ! Está esperando el token en la URL (params)
+        const {password} = req.body
 
             const tokenExists = await Token.findOne({token})
             if(!tokenExists) {

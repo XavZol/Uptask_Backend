@@ -1,6 +1,6 @@
 import { Router} from 'express'
 import { body, param } from 'express-validator'
-import { AuthController } from '../controllers/AuthControllers'
+import { AuthController } from '../controllers/AuthController'
 import { handleInputErrors } from '../middleware/validation'
 import { authenticate } from '../middleware/auth'
 
@@ -73,7 +73,7 @@ router.post('/update-password/:token',
     }),
     handleInputErrors,
     AuthController.updatedPasswordWithToken
-)
+);
 
 router.get('/user',
     authenticate,

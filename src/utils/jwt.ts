@@ -1,5 +1,4 @@
 import jwt from 'jsonwebtoken'
-import Types from 'mongoose'
 
 type UserPayLoad = {
     _id: string

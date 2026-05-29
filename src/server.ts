@@ -10,7 +10,7 @@ import authRoutes from './routes/authRoutes'
 dotenv.config()
 connectDB()
 
-const app = express()
+const app = express();
 app.use(cors(corsConfig))
 
 // Loggin
