@@ -10,7 +10,7 @@
     "start": "node ./dist/index.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "XavZol",
   "license": "ISC",
   "type": "commonjs",
   "dependencies": {
